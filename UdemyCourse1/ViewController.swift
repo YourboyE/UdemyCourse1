@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var sum = 0
     
     // This comment if for the GIT
+    // This comment was made from GitKraken
     
     // Outlets
     
