@@ -11,8 +11,7 @@ class ViewController: UIViewController {
 
     // Variables
     
-    var num = 0
-    var sum = 0
+  
     
     // This comment if for the GIT
     // This comment was made from GitKraken
@@ -22,6 +21,9 @@ class ViewController: UIViewController {
     // Outlets
     
     @IBOutlet weak var myLabel: UILabel!
+    
+    @IBOutlet weak var Numb1: UITextField!
+    @IBOutlet weak var Numb2: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,17 +36,9 @@ class ViewController: UIViewController {
     // Buttons
     @IBAction func PressMeBtn(_ sender: Any) {
         
-        num = num + 1
-        sum = num
+        var sum = Double(Numb1.text!)! + Double(Numb2.text!)!
+        myLabel.text = "The Total Is \(sum)"
         
-        myLabel.text = "\(sum)"
-        view.backgroundColor = UIColor.white
-        
-        if sum >= 10 {
-            view.backgroundColor = UIColor.red
-            myLabel.text = "CONGRATS, THAT'S 10!"
-            num = 0
-        }
     }
     
     

@@ -30,19 +30,41 @@
                                     <action selector="PressMeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGJ-O4-OuQ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2n-6p-S1I">
+                                <rect key="frame" x="157" y="357" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UKa-Xa-6R5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70b-Ww-3Gr">
+                                <rect key="frame" x="157" y="293" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Tyg-4A-iCR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="TPz-VY-q8l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="4eR-cB-RMi"/>
+                            <constraint firstItem="70b-Ww-3Gr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="50h-Rw-Ij6"/>
+                            <constraint firstItem="Wzd-Iy-vAl" firstAttribute="top" secondItem="H2n-6p-S1I" secondAttribute="bottom" constant="46.5" id="IOC-TX-5ji"/>
                             <constraint firstItem="Wzd-Iy-vAl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="THK-Nr-Dss"/>
+                            <constraint firstItem="H2n-6p-S1I" firstAttribute="top" secondItem="70b-Ww-3Gr" secondAttribute="bottom" constant="30" id="VcG-Yg-Jof"/>
                             <constraint firstItem="TPz-VY-q8l" firstAttribute="top" secondItem="Wzd-Iy-vAl" secondAttribute="bottom" constant="102.5" id="ae4-uc-Z84"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TPz-VY-q8l" secondAttribute="trailing" constant="134" id="dif-RF-h0w"/>
+                            <constraint firstItem="H2n-6p-S1I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fQz-0q-jZH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TPz-VY-q8l" secondAttribute="bottom" constant="230" id="gi1-XP-D4s"/>
                             <constraint firstItem="Wzd-Iy-vAl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zUa-n5-unC"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Numb1" destination="70b-Ww-3Gr" id="1d3-D2-ka3"/>
+                        <outlet property="Numb2" destination="H2n-6p-S1I" id="rWc-R2-ttP"/>
                         <outlet property="myLabel" destination="Wzd-Iy-vAl" id="rTA-rQ-LuX"/>
                     </connections>
                 </viewController>
