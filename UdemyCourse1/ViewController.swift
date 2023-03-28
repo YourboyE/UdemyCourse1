@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     // This comment if for the GIT
     // This comment was made from GitKraken
     
-    // This Comment was made for Remote Purposes
+    // This is the extra commit that Nick wanted me to add!!
     
     // Outlets
     
