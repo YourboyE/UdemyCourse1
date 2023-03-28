@@ -38,6 +38,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZqU-Pl-CQz">
+                                <rect key="frame" x="182.5" y="228" width="51" height="31"/>
+                            </switch>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70b-Ww-3Gr">
                                 <rect key="frame" x="157" y="293" width="100" height="34"/>
                                 <constraints>
@@ -59,12 +62,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TPz-VY-q8l" secondAttribute="trailing" constant="134" id="dif-RF-h0w"/>
                             <constraint firstItem="H2n-6p-S1I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fQz-0q-jZH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TPz-VY-q8l" secondAttribute="bottom" constant="230" id="gi1-XP-D4s"/>
+                            <constraint firstItem="70b-Ww-3Gr" firstAttribute="top" secondItem="ZqU-Pl-CQz" secondAttribute="bottom" constant="34" id="h9z-ZD-WfS"/>
+                            <constraint firstItem="ZqU-Pl-CQz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pPj-Fe-9Fp"/>
                             <constraint firstItem="Wzd-Iy-vAl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zUa-n5-unC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Numb1" destination="70b-Ww-3Gr" id="1d3-D2-ka3"/>
                         <outlet property="Numb2" destination="H2n-6p-S1I" id="rWc-R2-ttP"/>
+                        <outlet property="additionSwitch" destination="ZqU-Pl-CQz" id="8dB-TK-q7T"/>
                         <outlet property="myLabel" destination="Wzd-Iy-vAl" id="rTA-rQ-LuX"/>
                     </connections>
                 </viewController>

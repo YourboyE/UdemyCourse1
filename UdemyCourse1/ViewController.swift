@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var Numb1: UITextField!
     @IBOutlet weak var Numb2: UITextField!
     
+    @IBOutlet weak var additionSwitch: UISwitch!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -36,9 +39,13 @@ class ViewController: UIViewController {
     // Buttons
     @IBAction func PressMeBtn(_ sender: Any) {
         
-        var sum = Double(Numb1.text!)! + Double(Numb2.text!)!
-        myLabel.text = "The Total Is \(sum)"
-        
+        if additionSwitch.isOn {
+            var sum = Double(Numb1.text!)! + Double(Numb2.text!)!
+            myLabel.text = "\(Numb1.text!) + \(Numb2.text!) = \(sum)"
+        } else {
+            var sum = Double(Numb1.text!)! - Double(Numb2.text!)!
+            myLabel.text = "\(Numb1.text!) - \(Numb2.text!) = \(sum)"
+        }
     }
     
     
