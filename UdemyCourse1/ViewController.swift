@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var num = 0
     var sum = 0
     
+    // This comment if for the GIT
     
     // Outlets
     
