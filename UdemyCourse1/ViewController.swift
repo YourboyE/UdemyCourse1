@@ -3,7 +3,7 @@
 //  UdemyCourse1
 //
 //  Created by YBE on 3/27/23.
-//
+
 
 import UIKit
 
@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     // This comment if for the GIT
     // This comment was made from GitKraken
+    
+    // This Comment was made for Remote Purposes
     
     // Outlets
     
